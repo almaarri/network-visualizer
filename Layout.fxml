@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <HBox>
+               <children>
+                  <TextField fx:id="tField" layoutX="10.0" layoutY="10.0" promptText="Dest" />
+                  <Button mnemonicParsing="false" onAction="#findRoute" text="Get route" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <left>
+      <Text fx:id="tbox" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="347.783203125" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="313.0" prefWidth="413.0" BorderPane.alignment="CENTER">
+         <children>
+            <Line endX="238.0" endY="22.0" startX="14.0" startY="299.0" />
+            <Circle fx:id="c1" />
+            <Circle fx:id="c2" />
+            <Circle fx:id="c3" />
+            <Circle fx:id="c4" />
+            <Circle fx:id="c5" />
+            <Circle fx:id="c8" />
+            <Circle fx:id="c7" />
+            <Circle fx:id="c6" />
+            <Circle fx:id="c9" />
+            <Circle fx:id="c10" />
+            <Label fx:id="l1" onMouseEntered="#labelHover1" onMouseExited="#labelExit1" />
+        	<Label fx:id="l2" onMouseEntered="#labelHover2" onMouseExited="#labelExit2" />
+            <Label fx:id="l3" onMouseEntered="#labelHover3" onMouseExited="#labelExit3"/>
+            <Label fx:id="l4" onMouseEntered="#labelHover4" onMouseExited="#labelExit4" />
+            <Label fx:id="l5" onMouseEntered="#labelHover5" onMouseExited="#labelExit5" />
+        	<Label fx:id="l6" onMouseEntered="#labelHover6" onMouseExited="#labelExit6" />
+            <Label fx:id="l7" onMouseEntered="#labelHover7" onMouseExited="#labelExit7"/>
+            <Label fx:id="l8" onMouseEntered="#labelHover8" onMouseExited="#labelExit8"/>
+            <Label fx:id="l9" onMouseEntered="#labelHover9" onMouseExited="#labelExit9"/>
+            <Label fx:id="l10" onMouseEntered="#labelHover10" onMouseExited="#labelExit10"/>
+            
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
